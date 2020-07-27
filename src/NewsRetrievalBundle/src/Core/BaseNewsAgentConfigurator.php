@@ -7,7 +7,7 @@ use App\NewsRetrievalBundle\Core\NewsAgentTemplateGenerator;
 use App\NewsRetrievalBundle\Core\NewsAgentUrlGenerator;
 
 /**
-* Predefined class containing some general use methods.
+* Predefined class containing some general use methods to set up config parameters.
 *
 * @author Valentijn Manshande <v.manshande88@gmail.com>
 */
