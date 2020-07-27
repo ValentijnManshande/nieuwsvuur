@@ -1,6 +1,6 @@
 <?php
 
-namespace App\NewsRetrievalBundle;
+namespace App\NewsRetrievalBundle\Core\Interfaces;
 
 /**
 * Methods to diplay either a single news article from a specified news agent or 
@@ -11,7 +11,7 @@ namespace App\NewsRetrievalBundle;
 
 interface DisplayNewsArticle
 {
-    function displaySingleArticle($mediaAgent, $article, $template);
+    function displaySingleArticle(string $newsAgent, array $article, string $template);
 
-    function displayMultipleArticles($mediaAgent, $articles, $template);
+    function displayMultipleArticles(string $newsAgent, array $articles, string $template);
 }

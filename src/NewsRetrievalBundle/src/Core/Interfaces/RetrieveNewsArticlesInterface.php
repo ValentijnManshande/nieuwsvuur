@@ -1,6 +1,6 @@
 <?php
 
-namespace App\NewsRetrievalBundle;
+namespace App\NewsRetrievalBundle\Core\Interfaces;
 
 /**
 * Methods to retrieve either a single news article from a specified news agent or 
