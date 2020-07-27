@@ -2,7 +2,7 @@
 
 namespace App\NewsRetrievalBundle\Core;
 
-use App\NewsRetrievalBundle\Core\Interfaces\ProcessSpecificNewsAgentInterface;
+use App\NewsRetrievalBundle\Core\Interfaces\ConfigureSpecificNewsAgentInterface;
 use App\NewsRetrievalBundle\Core\NewsAgentTemplateGenerator;
 use App\NewsRetrievalBundle\Core\NewsAgentUrlGenerator;
 
@@ -12,7 +12,7 @@ use App\NewsRetrievalBundle\Core\NewsAgentUrlGenerator;
 * @author Valentijn Manshande <v.manshande88@gmail.com>
 */
 
-class BaseNewsAgentConfigurator implements ProcessSpecificNewsAgentInterface
+class BaseNewsAgentConfigurator implements ConfigureSpecificNewsAgentInterface
 {
     private $templator;
 

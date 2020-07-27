@@ -8,7 +8,7 @@ namespace App\NewsRetrievalBundle\Core\Interfaces;
 * @author Valentijn Manshande <v.manshande88@gmail.com>
 */
 
-interface ConfigureSpecificNewsAgent
+interface ConfigureSpecificNewsAgentInterface
 {
     /**
     * Method to determine which news agent should be scraped and how many articles should be returned
