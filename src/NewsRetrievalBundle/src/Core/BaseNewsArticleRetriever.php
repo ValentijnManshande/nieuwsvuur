@@ -19,12 +19,12 @@ class BaseNewsArticleRetriever implements RetrieveNewsArticlesInterface
 
     }
 
-    protected function retrieveSingleArticle()
+    public function retrieveSingleArticle(string $mediaAgent, string $url)
     {
 
     }
 
-    protected function retrieveMultipleArticles()
+    public function retrieveMultipleArticles(string $mediaAgent, array $urls)
     {
         
     }
