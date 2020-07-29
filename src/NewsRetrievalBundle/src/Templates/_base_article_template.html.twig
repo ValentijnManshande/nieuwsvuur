@@ -1,0 +1,32 @@
+
+{% block article_template %}
+<div class="col-6">
+    <h1 class="text-center">
+    {{ article.articles|length }} {{ article.articles|length = 1 ? 'artikel' : 'artikelen' }} van {{ article.news_agent}}.
+    </h1>
+    <div class="col-8">
+        {% if article.articles|length > 0 %}
+        <ul>
+            {% for news_article in article.articles %}
+            <li>
+                <a href={{ news_article.url }}>
+                <ul>
+                    <li>
+                    {{ news_article.title }}
+                    </li>
+                    <li>
+                    {{ news_article.author }}
+                    </li>
+                </ul>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <h2 class="text-center">
+            Niets gevonden!
+        </h2>
+        {% endif %}
+    </div>
+</div>
+{% endblock article_template %}
