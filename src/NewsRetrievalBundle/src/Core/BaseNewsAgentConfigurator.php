@@ -26,7 +26,7 @@ class BaseNewsAgentConfigurator implements ConfigureSpecificNewsAgentInterface
         'max_article_amount' => 0,
     ];
 
-    public function __construct(NewsAgentTemplator $templator, NewsAgentUrlGenerator $urlGenerator)
+    public function __construct(NewsAgentTemplateGenerator $templator, NewsAgentUrlGenerator $urlGenerator)
     {
         $this->templator = $templator;
         $this->urlGenerator = $urlGenerator;
