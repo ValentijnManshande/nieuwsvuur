@@ -34,7 +34,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "App\\NewsRetrievalBundle\\": "src/NewsRetrievalBundle/src/"
         }
     },
     "autoload-dev": {
