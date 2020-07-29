@@ -7,7 +7,7 @@ use App\NewsRetrievalBundle\Models\BaseNewsArticleModel;
 class BaseNewsArticleFactory
 {
     
-    public function createNewsArticle(string $title, string $author, string $newsAgent, string $articlUrl) : BaseNewsArticleModel
+    public static function createNewsArticleModel(string $title, string $author, string $newsAgent, string $articlUrl) : BaseNewsArticleModel
     {
 
         return new BaseNewsArticleModel($title, $author, $newsAgent, $articlUrl);
