@@ -21,7 +21,7 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
-    App\NewsRetrievalBundle: 
+    App\NewsRetrievalBundle\: 
         resource: '../src/NewsRetrievalBundle/src/'
 
     # controllers are imported separately to make sure services can be injected
