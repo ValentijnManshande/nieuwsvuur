@@ -14,7 +14,7 @@ interface ConfigureSpecificNewsAgentInterface
     * Method to determine which news agent should be scraped and how many articles should be returned
     *
     */
-    function configureParameters(string $newsAgent, int $articleAmount, int $max = null);
+    function configureParameters(string $newsAgent, int $articleAmount, int $max);
 
     /**
     * Method to return all set parameters for further use

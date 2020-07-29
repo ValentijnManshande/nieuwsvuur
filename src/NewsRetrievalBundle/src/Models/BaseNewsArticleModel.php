@@ -4,6 +4,13 @@ namespace App\NewsRetrievalBundle\Models;
 
 use App\NewsRetrievalBundle\Models\Interfaces\NewsArticleModelInterface;
 
+/**
+* The base model representing a news article.
+*
+* @author Valentijn Manshande <v.manshande88@gmail.com>
+*/
+
+
 class BaseNewsArticleModel implements NewsArticleModelInterface
 {
     private string $title;
@@ -14,7 +21,7 @@ class BaseNewsArticleModel implements NewsArticleModelInterface
 
     private string $articleUrl;
 
-    public function __construct(string $title, string $author, string $newsAgent, string $articlUrl)
+    public function __construct(string $title, string $author, string $newsAgent, string $articleUrl)
     {
         $this->title = $title;
         $this->author = $author;

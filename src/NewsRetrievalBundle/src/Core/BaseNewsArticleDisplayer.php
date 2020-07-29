@@ -3,6 +3,8 @@
 namespace App\NewsRetrievalBundle\Core;
 
 use App\NewsRetrievalBundle\Core\Interfaces\DisplayNewsArticlesInterface;
+use App\NewsRetrievalBundle\Core\BaseNewsArticleRetriever;
+use App\NewsRetrievalBundle\Core\BaseNewsAgentConfigurator;
 
 /**
 * Predefined methods for displaying a single news article from a specified news agent or 
@@ -15,20 +17,20 @@ class BaseNewsArticleDisplayer implements DisplayNewsArticlesInterface
 {
     private BaseNewsArticleRetriever $articleRetriever;
 
-    private BaseNewsAgentConfiguration $newsAgentConfig;
+    private BaseNewsAgentConfigurator $newsAgentConfig;
 
-    public function __construct(BaseNewsArticleRetriever $articleRetriever, BaseNewsAgentConfiguration $config)
+    public function __construct(BaseNewsArticleRetriever $articleRetriever, BaseNewsAgentConfigurator $config)
     {
         $this->articleRetriever = $articleRetriever;
         $this->newsAgentConfig = $config;
     }
 
-    public function displaySingleArticle()
+    protected function displaySingleArticle()
     {
         // TO DO: call template for single article display
     }
 
-    public function displayMultipleArticles()
+    protected function displayMultipleArticles()
     {
         // TO DO: call and loop over template for multiple articles display;
     }

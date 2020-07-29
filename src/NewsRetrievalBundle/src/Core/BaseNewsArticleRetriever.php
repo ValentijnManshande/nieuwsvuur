@@ -19,12 +19,12 @@ class BaseNewsArticleRetriever implements RetrieveNewsArticlesInterface
 
     }
 
-    public function retrieveSingleArticle()
+    protected function retrieveSingleArticle()
     {
 
     }
 
-    public function retrieveMultipleArticles()
+    protected function retrieveMultipleArticles()
     {
         
     }
